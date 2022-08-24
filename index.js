@@ -1,9 +1,9 @@
-// TODO: Include packages needed for this application
+// Include packages needed for this application
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown.js');
 const fs = require('fs');
 
-// TODO: Create an array of questions for user input
+// Create an array of questions for user input
 const questions = [
     {
         type: 'input',
@@ -119,7 +119,7 @@ const questions = [
         type: 'list',
         name: 'licenses',
         message: 'What licenses would you like to include?',
-        choices: ['MIT', 'GPL', 'CC--0'],
+        choices: ['MIT', 'MPL-2.0', 'Apache'],
         when: ({ confirmLicenses }) => {
             if (confirmLicenses) {
                 return true;
@@ -130,14 +130,27 @@ const questions = [
     },
 ];
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    fs.writeFile(`./dist/${fileName}`, data, err => {
-        if (err) {throw err}; console.log('README file created!')
-    });
-};
+// Create a function to write README file
+const writeToFile = data => {
+    return new Promise((resolve, reject) => {
+        // make a readme file and add to dist folder
+        fs.writeFile('./dist/README.md', data, err => {
+            // if there's an error, reject the Promise and send the error to .catch() method
+            if (err) {
+                reject (err);
+                // return out of the function here to make sure the Promise doesn't continut to execute the resolve() function
+                return;
+            }
+            // if everything went well, resolve the Promise and send the successful data to the .then() method
+            resolve({
+                ok: true,
+                message: console.log('Success! Navigate to the "dist" folder to see your README!')
+            });
+        })
+    })
+}
 
-// TODO: Create a function to initialize app
+// Create a function to initialize app
 function init() {
     return inquirer.prompt(questions);
 }
