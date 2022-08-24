@@ -1,4 +1,4 @@
-# This is a sample readme for my sample project.
+# Sample readme for sample project
 
   [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://choosealicense.com/licenses/mit/)
 
@@ -13,22 +13,22 @@
   * [Credits](#credits)
 
   ## Description
-  This should be a descriptive description of my project and all the fun deatils about it.
+  My descrition will go here and it will be so detailed
 
   ## Installation
-  step one have everything installed. i dont know what im typing but list all your instructions here
+  All the steps for installation will go here
 
   ## Usage
-  list your instructions for using the project/app
+  How do i use this? Good question!
 
   ## Licenses
         This project is covered under the MIT license. To learn more about what this means, click the license button at the top.
 
   ## Contributing
-  Describe how other users can aid and improve the project
+  How will other help memake this better
 
   ## Tests
-  What test are included to make sure my project works?
+  All the test I wrote to make sure this app works
 
   ## Questions
   Have questions about this project?  
