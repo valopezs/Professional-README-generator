@@ -16,7 +16,8 @@ ways time consuming and challenging. It is extremely important to be able to cre
 te an in-depth README file so users can appropriately navigate through your proje
 ct. This README generator is able to provide that functionality and aid with the 
 process. Your README should always include what the project is for, how to use th
-e project, how to install it, how to report issues, and how to make contributions. Being able to generate this file through command line makes it easy and you're 
+e project, how to install it, how to report issues, and how to make contributions. 
+Being able to generate this file through command line makes it easy and you're 
 able to spend more time working on your project.
 
 ## Installation
