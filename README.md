@@ -39,6 +39,10 @@ Within the directory for this project, initialize prompts using the command "nod
 
 From there, simply enter the necessary information for your project. A new README file will be generated and placed into the 'dist' folder available for you to use.
 
+## Sample Video
+
+https://user-images.githubusercontent.com/107379025/186312043-1fff7c27-2793-4407-9eea-155e5fae485c.mp4
+
 ## Questions
 Have questions about this project?  
 GitHub: https://github.com/valopezs  
